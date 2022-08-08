@@ -54,7 +54,7 @@ const index = ({json ,jsonSeo ,links}) => {
                 method: 'POST',
                 mode: 'cors', 
                 cache: 'no-cache', 
-                credentials: 'same-origin', 
+                credentials: 'includes', 
                 headers: {
                   'Content-Type':'application/json'
                 },
