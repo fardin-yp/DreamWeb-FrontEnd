@@ -12,18 +12,6 @@ const AuthContext = createContext();
     const Api = "http://dreamwebbackend.herokuapp.com/"
     const [users ,setUsers] = useState(null);
 
-    useEffect(() => {
-      socket.current = io("ws://dreamwebbackend.herokuapp.com/")
-     } , []);
- 
-    useEffect(() => {
-       socket.current.on("getOnlineUsers" , OnlineUsers => {
-          setUsers(OnlineUsers)
-       })
-     },[]);
-
-     console.log(users)
-
 
     async function getUserLoggedIn() {
       try{
