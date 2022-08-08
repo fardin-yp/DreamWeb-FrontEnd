@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         // matching all API routes
-        source: "/api/(.*)",
+        source: "https://dreamwebbackend.herokuapp.com/(.*)",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "https://dreamwebbackend.herokuapp.com" },
